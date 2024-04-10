@@ -105,6 +105,13 @@ console.log(genteConJ);
 // Dado el siguiente array, crear otro que sea el resultado de elevar cada número a si mismo:
 const numeros = [4, 5, 6, 7, 8, 9, 10];
 
+const mayoresDeEdad = gente.map((persona) => {
+    if (persona.edad >= 25) {
+        return persona
+    }
+})
+console.log(mayoresDeEdad)
+
 const nombresConJ = gente.map((persona) => {
     if (persona.nombre[0] === "J") {
         return persona.nombre
@@ -281,9 +288,9 @@ const sentenceElements = [
 // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
 
 
-sentenceElements.splice(2,1,"Agustin")
+sentenceElements.splice(2, 1, "Agustin")
 const oracion = sentenceElements.reduce((a, b) => {
-return `${a} ${b}`
+    return `${a} ${b}`
 })
 
 console.log(oracion);
